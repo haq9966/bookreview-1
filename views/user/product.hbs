@@ -2,7 +2,7 @@
     <header class="text-truncate header-dark">
         <nav class="navbar fixed-top navbar-dark navbar-expand-md bg-dark navigation-clean-search"
             style="filter: blur(0px) brightness(105%) contrast(106%) grayscale(24%) hue-rotate(360deg);opacity: 0.98;">
-            <div class="container"><a class="navbar-brand" href="#">Company Name</a><button data-toggle="collapse"
+            <div class="container"><a class="navbar-brand" href="#">e-Lib</a><button data-toggle="collapse"
                     class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
                         class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
@@ -56,7 +56,8 @@
         <div class="container hero">
             <div class="row">
                 <div class="col-md-8 col-lg-8 offset-md-2">
-                    <h1 class="text-center" style="margin: 80px 0px 20px;">The Revolution is Here.</h1>
+                    <h1 class="text-center" style="margin: 80px 0px 20px;">#Today a reader, tomorrow a leader.</h1>
+                    <p class="text-center"  style="align-self:center; color: white; font-size: 20px;">"A word after a word after a word is power."</p>
                 </div>
             </div>
         </div>
@@ -68,86 +69,18 @@
     <div class="container">
 
         <div class="row" style="">
+          
             {{#each data}}
             <div class="col-md-2 p-4" style="">
                 <div class="row">
-                    <div class="card mb-4 box-shadow rounded-5 " data-aos="fade-up"
-                        style="height:auto;background-color:lightgray;">
-                        <img class="card-img-top  d-block rounded-5" height="250px"
-                            src="/productimages/{{this._id}}.jpg" alt="Card image cap" style="width: auto;hight: 150px">
+                    <div class="card mb-4 box-shadow b-5 " data-aos="fade-up"
+                        style="height:auto;background-color:#e4fcfd;border-radius: 20px;">
+                        <img class="card-img-top  d-block rounded-5 mt-1" height="250px"
+                            src="/productimages/{{this._id}}.jpg" alt="Card image cap" style="align-self: center;width: 95%;hight: 150px;border-top-left-radius: 10px;border-top-right-radius: 10px;">
                         <div class="card-body">
                             <a href="/details/{{this._id}}">
-                                <h5 style="text-align:center;color:red; font-family:fantasy;" class="card-title">
-                                    {{this.Name}}</h5>
-                            </a>
-                            <p class="card-text" style="text-align:center;">{{this.Genre}}</p>
-
-                            {{!-- <p class="card-text">{{this.describtion}}</p> --}}
-                            {{!-- <button onclick="addToCart('{{this._id}}')" class="btn btn-primary">Add to
-                                Cart</button>
-                            --}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {{/each}}
-            {{#each data}}
-            <div class="col-md-2 p-4" style="">
-                <div class="row">
-                    <div class="card mb-4 box-shadow rounded-5 " data-aos="fade-up"
-                        style="height:auto;background-color:lightgray;">
-                        <img class="card-img-top  d-block rounded-5" height="250px"
-                            src="/productimages/{{this._id}}.jpg" alt="Card image cap" style="width: auto;hight: 150px">
-                        <div class="card-body">
-                            <a href="/details/{{this._id}}">
-                                <h5 style="text-align:center;color:red; font-family:fantasy;" class="card-title">
-                                    {{this.Name}}</h5>
-                            </a>
-                            <p class="card-text" style="text-align:center;">{{this.Genre}}</p>
-
-                            {{!-- <p class="card-text">{{this.describtion}}</p> --}}
-                            {{!-- <button onclick="addToCart('{{this._id}}')" class="btn btn-primary">Add to
-                                Cart</button>
-                            --}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {{/each}}
-            {{#each data}}
-            <div class="col-md-2 p-4" style="">
-                <div class="row">
-                    <div class="card mb-4 box-shadow rounded-5 " data-aos="fade-up"
-                        style="height:auto;background-color:lightgray;">
-                        <img class="card-img-top  d-block rounded-5" height="250px"
-                            src="/productimages/{{this._id}}.jpg" alt="Card image cap" style="width: auto;hight: 150px">
-                        <div class="card-body">
-                            <a href="/details/{{this._id}}">
-                                <h5 style="text-align:center;color:red; font-family:fantasy;" class="card-title">
-                                    {{this.Name}}</h5>
-                            </a>
-                            <p class="card-text" style="text-align:center;">{{this.Genre}}</p>
-
-                            {{!-- <p class="card-text">{{this.describtion}}</p> --}}
-                            {{!-- <button onclick="addToCart('{{this._id}}')" class="btn btn-primary">Add to
-                                Cart</button>
-                            --}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {{/each}}
-            {{#each data}}
-            <div class="col-md-2 p-4" style="">
-                <div class="row">
-                    <div class="card mb-4 box-shadow rounded-5 " data-aos="fade-up"
-                        style="height:auto;background-color:lightgray;">
-                        <img class="card-img-top  d-block rounded-5" height="250px"
-                            src="/productimages/{{this._id}}.jpg" alt="Card image cap" style="width: auto;hight: 150px">
-                        <div class="card-body">
-                            <a href="/details/{{this._id}}">
-                                <h5 style="text-align:center;color:red; font-family:fantasy;" class="card-title">
-                                    {{this.Name}}</h5>
+                                <h6 style="text-align:center;color:rgb(61, 2, 2); font-family:fantasy;" class="card-title">
+                                    {{this.Name}}</h6>
                             </a>
                             <p class="card-text" style="text-align:center;">{{this.Genre}}</p>
 
@@ -167,8 +100,8 @@
     {{/if}}
     <div class="container">
         <div class="row mb-4">
-            <a href="/addproducts" class="btn btn-danger ml-auto my-5 mr-5 rounded-pill"
-                style="position: fixed;bottom: 0;right:0;">ADD</a>
+            <a href="/addproducts" class="btn btn-info ml-auto my-5 mr-5 rounded-pill"
+                style="position: fixed;bottom: 0;right:0;"><dd style="color: black;"><strong>ADD</strong></dd>  <img class="mb-2"style="height: 2.5rem;width: 2.5rem" src="/images/book_0.png"></a>
 
 
 
